@@ -11,6 +11,10 @@ import {
 import {withNavigation} from 'react-navigation';
 import StarRating from 'react-native-star-rating';
 
+import {getPopularitem} from '../redux/action/Popularitem';
+import {APP_URL} from '../config/config';
+import {connect} from 'react-redux';
+
 const styles = StyleSheet.create({
   wraptitle: {height: 40, backgroundColor: '#fff', flexDirection: 'row'},
   wraptitlemost: {justifyContent: 'center', flex: 1, paddingLeft: 20},
@@ -63,7 +67,12 @@ class MostpopularOriginal extends Component {
     super(props);
     this.state = {
       starCount: 5,
+      isLoading: true,
     };
+  }
+  async componentDidMount() {
+    await this.props.dispatch(getPopularitem());
+    this.setState({isLoading: false});
   }
   onStarRatingPress(rating) {
     this.setState({
@@ -109,44 +118,56 @@ class MostpopularOriginal extends Component {
         </View>
         <View style={styles.wrapcontent}>
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-            {this.props.data &&
-              this.props.data.map((v, i) => (
-                <View key={i} style={styles.awrapcontent}>
-                  <TouchableOpacity
-                    onPress={() =>
-                      this.props.navigation.navigate('Detailitem')
-                    }>
-                    <View style={styles.wrapimg}>
-                      <Image
-                        source={{uri: `asset:/images/${v.image}`}}
-                        style={styles.img}
+            {!this.state.isLoading &&
+              this.props.popularitem.data.map((v, i) => {
+                return (
+                  <View key={v.id_item} style={styles.awrapcontent}>
+                    <TouchableOpacity
+                      onPress={() =>
+                        this.props.navigation.navigate('Detailitem', {
+                          id: v.id_item
+                        })
+                      }>
+                      <View style={styles.wrapimg}>
+                        <Image
+                          style={styles.img}
+                          source={{
+                            uri: APP_URL.concat(`src/assets/${v.image}`),
+                          }}
+                        />
+                      </View>
+                    </TouchableOpacity>
+
+                    <View style={{flex: 1}}>
+                      <Text style={styles.textname}>{v.name_item}</Text>
+                    </View>
+                    <View style={{flex: 1}}>
+                      <Text style={styles.textrest}>{v.name_rest}</Text>
+                    </View>
+                    <View style={{flex: 1}}>
+                      <Text style={styles.textprices}>
+                        {this.rupiah(v.price)}
+                      </Text>
+                    </View>
+                    <View
+                      style={{
+                        width: 60,
+                        marginTop: 10,
+                        marginLeft: 8,
+                        flex: 1,
+                      }}>
+                      <StarRating
+                        disabled={true}
+                        maxStars={5}
+                        fullStarColor={'orange'}
+                        starSize={12}
+                        rating={v.rating}
+                        selectedStar={rating => this.onStarRatingPress(rating)}
                       />
                     </View>
-                  </TouchableOpacity>
-
-                  <View>
-                    <Text style={styles.textname}>{v.name_item}</Text>
                   </View>
-                  <View>
-                    <Text style={styles.textrest}>{v.name_rest}</Text>
-                  </View>
-                  <View>
-                    <Text style={styles.textprices}>
-                      {this.rupiah(v.price)}
-                    </Text>
-                  </View>
-                  <View style={{width: 60, marginTop: 10, marginLeft: 8}}>
-                    <StarRating
-                      disabled={true}
-                      maxStars={5}
-                      fullStarColor={'orange'}
-                      starSize={12}
-                      rating={this.state.starCount}
-                      selectedStar={rating => this.onStarRatingPress(rating)}
-                    />
-                  </View>
-                </View>
-              ))}
+                );
+              })}
           </ScrollView>
         </View>
       </>
@@ -156,4 +177,10 @@ class MostpopularOriginal extends Component {
 
 const Mostpopular = withNavigation(MostpopularOriginal);
 
-export default Mostpopular;
+const mapStateToProps = state => {
+  return {
+    popularitem: state.popularitem,
+  };
+};
+
+export default connect(mapStateToProps)(Mostpopular);

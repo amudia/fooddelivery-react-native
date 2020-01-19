@@ -6,41 +6,49 @@ const initialState = {
   isSuccess: true,
 };
 
-const item = (state = initialState, action) => {
+const itemid = (state = initialState, action) => {
   switch (action.type) {
-    case 'GET_ITEM':
+    case 'GET_ITEM_BY_ID_PENDING':
       return {
         ...state,
-        data: [
-          {
-            name: 'Supreme Super Pizza',
-            image: 'pizza.png',
-            restaurant: 'Pizza Hut',
-            price: 120000,
-          },
-          {
-            name: 'Espresso: Starbucks Coffee Company',
-            image: 'starbucks.jpeg',
-            restaurant: 'Starbucks',
-            price: 24000,
-          },
-          {
-            name: 'Dark Chocolate Mocha',
-            image: 'ayam.jpg',
-            restaurant: 'Khentucky Fried Chicken',
-            price: 32000,
-          },
-          {
-            name: 'Pumpkin Spice Latte',
-            image: 'starbucks2.jpg',
-            restaurant: 'Starbucks',
-            price: 14000,
-          },
-        ],
+        isLoading: true,
+        isError: false,
+      };
+    case 'GET_ITEM_BY_ID_REJECTED':
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+      };
+    case 'GET_ITEM_BY_ID_FULFILLED':
+      return {
+        count: action.payload.data.length,
+        data: action.payload.data.data,
+        isLoading: false,
+        isError: false,
+      };
+    case 'GET_ITEM_BY_CATEGORY_PENDING':
+      return {
+        ...state,
+        isLoading: true,
+        isError: false,
+      };
+    case 'GET_ITEM_BY_CATEGORY_REJECTED':
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+      };
+    case 'GET_ITEM_BY_CATEGORY_FULFILLED':
+      return {
+        count: action.payload.data.length,
+        data: action.payload.data.data,
+        isLoading: false,
+        isError: false,
       };
     default:
       return state;
   }
 };
 
-export default item;
+export default itemid;

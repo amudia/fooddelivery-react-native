@@ -6,21 +6,21 @@ const initialState = {
   isSuccess: true,
 };
 
-const categories = (state = initialState, action) => {
+const menurestaurant = (state = initialState, action) => {
   switch (action.type) {
-    case 'GET_CATEGORIES_PENDING':
+    case 'GET_MENURESTAURANT_PENDING':
       return {
         ...state,
         isLoading: true,
         isError: false,
       };
-    case 'GET_CATEGORIES_REJECTED':
+    case 'GET_MENURESTAURANT_REJECTED':
       return {
         ...state,
         isLoading: false,
         isError: true,
       };
-    case 'GET_CATEGORIES_FULFILLED':
+    case 'GET_MENURESTAURANT_FULFILLED':
       return {
         count: action.payload.data.length,
         data: action.payload.data.data,
@@ -32,4 +32,4 @@ const categories = (state = initialState, action) => {
   }
 };
 
-export default categories;
+export default menurestaurant;

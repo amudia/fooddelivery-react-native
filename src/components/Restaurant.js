@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import {Text, View, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import {withNavigation} from 'react-navigation';
 
+import {getRestaurant} from '../redux/action/Restaurant';
+import {APP_URL} from '../config/config';
+import {connect} from 'react-redux';
+
 const styles = StyleSheet.create({
   wrapallitem: {
     height: 40,
@@ -75,7 +79,11 @@ const styles = StyleSheet.create({
 class RestaurantOriginal extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {isLoading: true};
+  }
+  async componentDidMount() {
+    await this.props.dispatch(getRestaurant());
+    this.setState({isLoading: false});
   }
 
   render() {
@@ -86,31 +94,43 @@ class RestaurantOriginal extends Component {
           <View style={styles.bordertext} />
         </View>
         <View style={styles.card}>
-          {this.props.data &&
-            this.props.data.map((v, i) => (
-              <View key={i} style={styles.carditem}>
-                <TouchableOpacity
-                  onPress={() => this.props.navigation.navigate('Menu')}>
-                  <View style={styles.imgwrap}>
-                    <Image
-                      source={{uri: `asset:/images/${v.logo}`}}
-                      style={styles.img}
-                    />
-                  </View>
-                </TouchableOpacity>
-                <View style={styles.textwrap}>
-                  <View style={styles.atextwrap}>
-                    <Text style={styles.textname}>{v.name_rest}</Text>
+          {!this.state.isLoading &&
+            this.props.restaurant.data.map((v, i) => {
+              return (
+                <View key={v.id_restaurant} style={styles.carditem}>
+                  <TouchableOpacity
+                    onPress={() =>
+                      this.props.navigation.navigate('Menu', {
+                        id: v.id_restaurant,
+                      })
+                    }>
+                    <View style={styles.imgwrap}>
+                      <Image
+                        style={styles.img}
+                        source={{uri: APP_URL.concat(`src/assets/${v.logo}`)}}
+                      />
+                    </View>
+                    {console.log(APP_URL.concat(`src/assets/${v.logo}`))}
+                  </TouchableOpacity>
+                  <View style={styles.textwrap}>
+                    <View style={styles.atextwrap}>
+                      <Text style={styles.textname}>{v.name_rest}</Text>
+                    </View>
                   </View>
                 </View>
-              </View>
-            ))}
+              );
+            })}
         </View>
       </>
     );
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    restaurant: state.restaurant,
+  };
+};
 const Restaurant = withNavigation(RestaurantOriginal);
 
-export default Restaurant;
+export default connect(mapStateToProps)(Restaurant);

@@ -7,6 +7,10 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
+import {withNavigation} from 'react-navigation';
+import {getCategories} from '../redux/action/Categories';
+import {APP_URL} from '../config/config';
+import {connect} from 'react-redux';
 
 const styles = StyleSheet.create({
   title: {height: 40, padding: 20, borderBottomWidth: 1, borderColor: '#eee'},
@@ -37,11 +41,16 @@ const styles = StyleSheet.create({
   atitle: {fontWeight: 'bold', fontSize: 12, marginTop: 5},
 });
 
-export default class Categories extends Component {
+class CategoriesOriginal extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {isLoading: true};
   }
+  async componentDidMount() {
+    await this.props.dispatch(getCategories());
+    this.setState({isLoading: false});
+  }
+
   render() {
     return (
       <>
@@ -49,26 +58,44 @@ export default class Categories extends Component {
           <Text style={styles.texttitle}>Categories</Text>
         </View>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          {this.props.data &&
-            this.props.data.map((v, i) => (
-              <View key={i} style={styles.wrapcontent}>
-                <View style={styles.card}>
-                  <TouchableOpacity>
-                    <View style={styles.wrapimg}>
-                      <Image
-                        source={{uri: `asset:/images/icon/${v.logo}`}}
-                        style={styles.img}
-                      />
-                    </View>
-                    <View style={styles.awraptitle}>
-                      <Text style={styles.atitle}>{v.name_cat}</Text>
-                    </View>
-                  </TouchableOpacity>
+          {!this.state.isLoading &&
+            this.props.categories.data.map((v, i) => {
+              return (
+                <View key={v.id_category} style={styles.wrapcontent}>
+                  <View style={styles.card}>
+                    <TouchableOpacity
+                      onPress={() =>
+                        this.props.navigation.navigate('Menucategory', {
+                          id: v.id_category,
+                        })
+                      }>
+                      <View style={styles.wrapimg}>
+                        <Image
+                          style={styles.img}
+                          source={{
+                            uri: APP_URL.concat(`src/assets/${v.image}`),
+                          }}
+                        />
+                      </View>
+                      <View style={styles.awraptitle}>
+                        <Text style={styles.atitle}>{v.name_category}</Text>
+                      </View>
+                    </TouchableOpacity>
+                  </View>
                 </View>
-              </View>
-            ))}
+              );
+            })}
         </ScrollView>
       </>
     );
   }
 }
+const Categories = withNavigation(CategoriesOriginal);
+
+const mapStateToProps = state => {
+  return {
+    categories: state.categories,
+  };
+};
+
+export default connect(mapStateToProps)(Categories);

@@ -8,35 +8,24 @@ const initialState = {
 
 const popularitem = (state = initialState, action) => {
   switch (action.type) {
-    case 'GET_POPULAR_ITEM':
+    case 'GET_POPULAR_ITEM_PENDING':
       return {
         ...state,
-        data: [
-          {
-            name_item: 'Pumpkin Spice Latte',
-            image: 'starbucks2.jpg',
-            name_rest: 'Starbucks',
-            price: 14000,
-          },
-          {
-            name_item: 'Paket Combo',
-            image: 'ayam.jpg',
-            name_rest: 'Khentucky Fried Chicken',
-            price: 32000,
-          },
-          {
-            name_item: 'Supreme Super Pizza',
-            image: 'pizza.png',
-            name_rest: 'Pizza Hut',
-            price: 120000,
-          },
-          {
-            name_item: 'Espresso: Starbucks Coffee Company',
-            image: 'starbucks.jpeg',
-            name_rest: 'Starbucks',
-            price: 24000,
-          },
-        ],
+        isLoading: true,
+        isError: false,
+      };
+    case 'GET_POPULAR_ITEM_REJECTED':
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+      };
+    case 'GET_POPULAR_ITEM_FULFILLED':
+      return {
+        count: action.payload.data.length,
+        data: action.payload.data.data,
+        isLoading: false,
+        isError: false,
       };
     default:
       return state;

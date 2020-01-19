@@ -9,8 +9,7 @@ import {
 } from 'react-native';
 import {withNavigation} from 'react-navigation';
 import StarRating from 'react-native-star-rating';
-import {getRestaurantid} from '../redux/action/Detailrestaurant';
-import {getMenurestaurant} from '../redux/action/Menurestaurant';
+import {getItemcat} from '../redux/action/Item';
 import {connect} from 'react-redux';
 import {APP_URL} from '../config/config';
 
@@ -92,7 +91,7 @@ const styles = StyleSheet.create({
   imgicon: {height: 25, width: 25},
 });
 
-class MenuOriginal extends Component {
+class MenucategoryOriginal extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -127,8 +126,7 @@ class MenuOriginal extends Component {
   }
   async componentDidMount() {
     const id = this.props.navigation.getParam('id');
-    await this.props.dispatch(getRestaurantid(id));
-    await this.props.dispatch(getMenurestaurant(id));
+    await this.props.dispatch(getItemcat(id));
     this.setState({isLoading: false});
   }
   render() {
@@ -174,35 +172,7 @@ class MenuOriginal extends Component {
         </View>
         <ScrollView>
           {!this.state.isLoading &&
-            this.props.detailrestaurant.data.map((v, i) => {
-              return (
-                <View
-                  key={v.id_restaurant}
-                  style={{
-                    height: 260,
-                    backgroundColor: '#fff',
-                    borderBottomWidth: 2,
-                    borderColor: '#eee',
-                    padding: 10,
-                  }}>
-                  <View
-                    style={{alignItems: 'center', justifyContent: 'center'}}>
-                    <View style={{height: 200, width: 200, marginBottom: 15}}>
-                      <Image
-                        source={{uri: APP_URL.concat(`src/assets/${v.logo}`)}}
-                        style={{height: 200, width: 200, borderRadius: 10}}
-                      />
-                    </View>
-                    <Text style={{fontSize: 16, fontWeight: 'bold'}}>
-                      {v.name_rest}
-                    </Text>
-                  </View>
-                </View>
-              );
-            })}
-
-          {!this.state.isLoading &&
-            this.props.menurestaurant.data.map((v, i) => {
+            this.props.itemid.data.map((v, i) => {
               return (
                 <View key={i} style={{backgroundColor: '#fff', flex: 1}}>
                   <View style={styles.card}>
@@ -241,8 +211,7 @@ class MenuOriginal extends Component {
                               }
                             />
                           </View>
-                          <View
-                            style={{ paddingRight: 20}}>
+                          <View style={{flex: 1, paddingRight: 20}}>
                             <View
                               onStartShouldSetResponder={() =>
                                 this.props.navigation.navigate('Cart')
@@ -270,13 +239,12 @@ class MenuOriginal extends Component {
     );
   }
 }
-const Menu = withNavigation(MenuOriginal);
+const Menucategory = withNavigation(MenucategoryOriginal);
 
 const mapStateToProps = state => {
   return {
-    detailrestaurant: state.detailrestaurant,
-    menurestaurant: state.menurestaurant,
+    itemid: state.itemid,
   };
 };
 
-export default connect(mapStateToProps)(Menu);
+export default connect(mapStateToProps)(Menucategory);

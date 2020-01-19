@@ -11,6 +11,7 @@ import Register from '../screens/Register';
 import ForgotPassword from '../screens/ForgotPassword';
 import Search from '../screens/Search';
 import Detailitem from '../screens/Detailitem';
+import Detailriviews from '../screens/Detailriviews';
 import Help from '../screens/Help';
 import Cart from '../screens/Cart';
 import Checkout from '../screens/Checkout';
@@ -20,6 +21,7 @@ import Menu from '../screens/Menu';
 import Setting from '../screens/Setting';
 import Riview from '../screens/Riview';
 import Pagethanks from '../screens/Pagethanks';
+import Menucategory from '../screens/Menucategory';
 
 // const SplashNav = createStackNavigator(
 //   {
@@ -81,8 +83,20 @@ const HomeNav = createStackNavigator(
         headerShown: false,
       },
     },
+    Detailriviews: {
+      screen: Detailriviews,
+      navigationOptions: {
+        headerShown: false,
+      },
+    },
     Menu: {
       screen: Menu,
+      navigationOptions: {
+        headerShown: false,
+      },
+    },
+    Menucategory: {
+      screen: Menucategory,
       navigationOptions: {
         headerShown: false,
       },
@@ -148,14 +162,12 @@ const CartNav = createStackNavigator(
       navigationOptions: {
         headerShown: false,
       },
-      
     },
     Pagethanks: {
       screen: Pagethanks,
       navigationOptions: {
         headerShown: false,
       },
-      
     },
   },
   {
@@ -182,7 +194,6 @@ const InboxNav = createStackNavigator(
         headerShown: false,
       },
     },
-    
   },
   {
     initialRouteName: 'Inbox',

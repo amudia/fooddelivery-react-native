@@ -8,41 +8,24 @@ const initialState = {
 
 const restaurant = (state = initialState, action) => {
   switch (action.type) {
-    case 'GET_RESTAURANT':
+    case 'GET_RESTAURANT_PENDING':
       return {
         ...state,
-        data: [
-          {
-            name_rest: 'Pizza Hut Delivery-Padjajaran Bogor',
-            desc_rest: 'Deskripsi Restaurant',
-            logo: 'phd.jpg',
-          },
-          {
-            name_rest: 'Richeese Factory-Padjajaran Bogor',
-            desc_rest: 'Deskripsi Restaurant',
-            logo: 'richeese.jpg',
-          },
-          {
-            name_rest: 'HokBen-Baranangsiang',
-            desc_rest: 'Deskripsi Restaurant',
-            logo: 'hokben.jpg',
-          },
-          {
-            name_rest: 'KFC-Padjajaran Bogor',
-            desc_rest: 'Deskripsi Restaurant',
-            logo: 'kfc.jpg',
-          },
-          {
-            name_rest: 'McDonalds-Juanda Bogor',
-            desc_rest: 'Deskripsi Restaurant',
-            logo: 'mcdonald.jpg',
-          },
-          {
-            name_rest: 'Starbucks-Bogor Rest Area',
-            desc_rest: 'Deskripsi Restaurant',
-            logo: 'starbucks.png',
-          },
-        ],
+        isLoading: true,
+        isError: false,
+      };
+    case 'GET_RESTAURANT_REJECTED':
+      return {
+        ...state,
+        isLoading: false,
+        isError: true,
+      };
+    case 'GET_RESTAURANT_FULFILLED':
+      return {
+        count: action.payload.data.length,
+        data: action.payload.data.data,
+        isLoading: false,
+        isError: false,
       };
     default:
       return state;
