@@ -1,0 +1,1023 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* happfoodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* happfoodTests.m */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* happfoodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* happfoodTests.m */; };
+		BA128AB581FF43CFB2D8267A /* ayam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68CD71629BF046E8B2DD95FE /* ayam.jpg */; };
+		FAEB44BC0A8B4DE6A19A1A02 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E52E5AE694A4F5595BCAB4D /* cart.png */; };
+		C57AE44725A442AD830601BD /* chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F42754A90DE483FB3EEA942 /* chicken.png */; };
+		72EC331CF5284C4FB57D827F /* coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AEE636873C3464D975DD5FA /* coffee.png */; };
+		30AA66CE9C1747178B1BF30D /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = EBED963D161044A89A2877F3 /* filter.png */; };
+		534765A4B8004CFCA3B2511A /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = D0626842454F4EEF9E5A06F8 /* globe.png */; };
+		F6C5ED4F36484FFEABAD27FD /* help-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = E1C0D2E49382443ABF8C6E60 /* help-circle.png */; };
+		E467BE35960044C5AB7A1FDD /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 03ACDB18E6874537A799BED8 /* home.png */; };
+		AFB9FA24EFE6439AB864C91C /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 616C9F33E5764446AE09BEA6 /* map.png */; };
+		FC5DA8E83C9647FE8F364E06 /* message-square.png in Resources */ = {isa = PBXBuildFile; fileRef = AC1E8AF1251F47FAB7D78A58 /* message-square.png */; };
+		560F4638DB75486D836992F3 /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 85B85B3042D249DE8231E250 /* mic.png */; };
+		032A6A4B94B34D908D2B9DEE /* pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD4847F414A4AECB7634845 /* pizza.png */; };
+		BD1433DFCAF64A8F81CE4DE9 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = E404A64A885D4E029D66E230 /* plus.png */; };
+		A190DB1F29C3483594E319B0 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = BD9B0A9E0EB443E296B5D6A2 /* search.png */; };
+		15D6A8D2AAF34E419D859BD1 /* shopping-cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C0C933EACE4D2EBEE0CBE5 /* shopping-cart.png */; };
+		164E277655A145DD98825090 /* tea.png in Resources */ = {isa = PBXBuildFile; fileRef = DCCFEC4EBE844D4DA675E39F /* tea.png */; };
+		C930AD7E9EAD4E009FC3BAAD /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BDF6BC039B443B3AE703060 /* user.png */; };
+		C27885FEC2B14A00867A6E1A /* starbucks.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C2A011B89EBB45F4B60839C1 /* starbucks.jpeg */; };
+		3BCAE78E5F3B46C1A123F53D /* starbucks2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 659EA3F002864F339C1C33EF /* starbucks2.jpg */; };
+		9892F34901A449D9BA1D37A5 /* super.png in Resources */ = {isa = PBXBuildFile; fileRef = C353E3EFBFCB4C4F8E674EB3 /* super.png */; };
+		D4E9A4E9F2174C83A480FD3C /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C584D68211048FA9EAA7D3C /* arrow.png */; };
+		119D7042A085428FB8E8F283 /* credit-card.png in Resources */ = {isa = PBXBuildFile; fileRef = 224EE217CBAE4D71818ED3E0 /* credit-card.png */; };
+		0C104053479C4F01970EC473 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B74A08C608243BBBA0B53AF /* setting.png */; };
+		C4951E4B0F4943B98D4112DD /* shopping-bag.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AC6AAF6532480BA891327D /* shopping-bag.png */; };
+		44D8704C93C148CFB3A6FBD8 /* user.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AFF7832CCE67408AA1AE6E53 /* user.jpg */; };
+		214E8FE22D8C4494A760EABE /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC5F7FAFC6B04C4899F0A6E7 /* AntDesign.ttf */; };
+		E6965CB714834F54BF40B33E /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC9E56A2F14741BDBF9A9D31 /* Entypo.ttf */; };
+		4FF7E215EE5F4D7095C73156 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E97114F45223459FAC865815 /* EvilIcons.ttf */; };
+		8F088F7F733B4EE8AB503FC6 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4302C117D02E4CFE9430DF86 /* Feather.ttf */; };
+		0FBEF5E96CAD4571BFA79644 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F33780F2A3F2401390D208C4 /* FontAwesome.ttf */; };
+		00CFC8F06C68418D86C6AF63 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9640979FF2E8497BAB5B9361 /* FontAwesome5_Brands.ttf */; };
+		CF70E49DC387468B923E7C98 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA9B75C1F6BF4BC580729C09 /* FontAwesome5_Regular.ttf */; };
+		1CB1977CFEAF40FBBA763B2F /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04D794A71B0540A3AD8C3096 /* FontAwesome5_Solid.ttf */; };
+		6E1A3D77C8E94DDEA4CCF12C /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D68659436AB44F79E76CF9F /* Fontisto.ttf */; };
+		F24956FFE5D14A1FBB8405EA /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5052E94B5F2F402382B3A6DD /* Foundation.ttf */; };
+		9885E420D311415A8B57D95E /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DA5EA942B4E4782A4B02268 /* Ionicons.ttf */; };
+		16958A91319E44BE8B7BBBE1 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5D9AD8AAEE74F3AB1C126AD /* MaterialCommunityIcons.ttf */; };
+		C2ED13A1C2124ACA9A447BB4 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF6A78AEC7874E1AABCC05BF /* MaterialIcons.ttf */; };
+		D96A3F83645F4C6FB3F051A2 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44E7045A45CD4CE8953A8399 /* Octicons.ttf */; };
+		DE5BE59D05694769829ADCBD /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D2CB634B6204E248A77D94E /* Roboto_medium.ttf */; };
+		1AFD5E0AFDEC4470AB2B2491 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC85B35327144816987224DE /* Roboto.ttf */; };
+		2D1C3A18BE3F469DA9324BE7 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B145EB982AA4D50B06CD230 /* rubicon-icon-font.ttf */; };
+		09768EBFC3004EF9ADED37BF /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0F738EB6CAF4CBCBE830F93 /* SimpleLineIcons.ttf */; };
+		A47BBE28C3FD4637A0094043 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1EB6D0C940B4B918BE39C68 /* Zocial.ttf */; };
+		18899E8D8A064DDF83BE2D26 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E8732C4E6A4AA0A3E80AB6 /* lock.png */; };
+		BFCC780B3DF44814988790C2 /* userlog.png in Resources */ = {isa = PBXBuildFile; fileRef = 39CB2D6C7A904425AFEA1FAE /* userlog.png */; };
+		B04B7F79753748358792BBA8 /* hokben.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50B8DFE9E3B424BB8E8D5D5 /* hokben.jpg */; };
+		F97E0E31422A4D43AD422C52 /* arrow-left.png in Resources */ = {isa = PBXBuildFile; fileRef = DBDD677BD79845999925E9F6 /* arrow-left.png */; };
+		A00AC8E52ACE4A85974FCB38 /* check-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 715F5B726537403996CD7295 /* check-circle.png */; };
+		D72D974C58164A129D9347E8 /* minus-square.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5D4CA5355B42C6B95A2D98 /* minus-square.png */; };
+		98967A889EAE44259C54AFE4 /* plus-square.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC9E44287E45038070A4FA /* plus-square.png */; };
+		5BD7AB3E1E1E41E4BFA092ED /* trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E0E0ACFCF414EA1847F93CE /* trash.png */; };
+		AF85720B35CB45F6878834E4 /* kfc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D18F13C496C4B55B0DD80AF /* kfc.jpg */; };
+		5E34E97D32FC4D1BBF395467 /* mcdonald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A086B4210F843E099DB3F0A /* mcdonald.jpg */; };
+		0D0D12EAC4FB4E2D88E66906 /* phd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31CFB7251449433BA8A13CBE /* phd.jpg */; };
+		458CDD2A7D8642C2919464B1 /* richeese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA4DFD243A334ECE843D2003 /* richeese.jpg */; };
+		FAC15D913DCD426FB4D09783 /* starbucks.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E3FB28912A343838BF33D88 /* starbucks.png */; };
+		DA4F99E49DA1486C960CBD65 /* thanks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E8E80BCE2455ABCE428D4 /* thanks.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = happfood;
+		};
+		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
+			remoteInfo = "happfood-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* happfoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = happfoodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* happfoodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = happfoodTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* happfood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = happfood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = happfood/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = happfood/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = happfood/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = happfood/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = happfood/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* happfood-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "happfood-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* happfood-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "happfood-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		68CD71629BF046E8B2DD95FE /* ayam.jpg */ = {isa = PBXFileReference; name = "ayam.jpg"; path = "../src/assets/images/ayam.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7E52E5AE694A4F5595BCAB4D /* cart.png */ = {isa = PBXFileReference; name = "cart.png"; path = "../src/assets/images/icon/cart.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0F42754A90DE483FB3EEA942 /* chicken.png */ = {isa = PBXFileReference; name = "chicken.png"; path = "../src/assets/images/icon/chicken.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9AEE636873C3464D975DD5FA /* coffee.png */ = {isa = PBXFileReference; name = "coffee.png"; path = "../src/assets/images/icon/coffee.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EBED963D161044A89A2877F3 /* filter.png */ = {isa = PBXFileReference; name = "filter.png"; path = "../src/assets/images/icon/filter.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D0626842454F4EEF9E5A06F8 /* globe.png */ = {isa = PBXFileReference; name = "globe.png"; path = "../src/assets/images/icon/globe.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E1C0D2E49382443ABF8C6E60 /* help-circle.png */ = {isa = PBXFileReference; name = "help-circle.png"; path = "../src/assets/images/icon/help-circle.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		03ACDB18E6874537A799BED8 /* home.png */ = {isa = PBXFileReference; name = "home.png"; path = "../src/assets/images/icon/home.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		616C9F33E5764446AE09BEA6 /* map.png */ = {isa = PBXFileReference; name = "map.png"; path = "../src/assets/images/icon/map.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC1E8AF1251F47FAB7D78A58 /* message-square.png */ = {isa = PBXFileReference; name = "message-square.png"; path = "../src/assets/images/icon/message-square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		85B85B3042D249DE8231E250 /* mic.png */ = {isa = PBXFileReference; name = "mic.png"; path = "../src/assets/images/icon/mic.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2AD4847F414A4AECB7634845 /* pizza.png */ = {isa = PBXFileReference; name = "pizza.png"; path = "../src/assets/images/icon/pizza.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E404A64A885D4E029D66E230 /* plus.png */ = {isa = PBXFileReference; name = "plus.png"; path = "../src/assets/images/icon/plus.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BD9B0A9E0EB443E296B5D6A2 /* search.png */ = {isa = PBXFileReference; name = "search.png"; path = "../src/assets/images/icon/search.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		41C0C933EACE4D2EBEE0CBE5 /* shopping-cart.png */ = {isa = PBXFileReference; name = "shopping-cart.png"; path = "../src/assets/images/icon/shopping-cart.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DCCFEC4EBE844D4DA675E39F /* tea.png */ = {isa = PBXFileReference; name = "tea.png"; path = "../src/assets/images/icon/tea.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6BDF6BC039B443B3AE703060 /* user.png */ = {isa = PBXFileReference; name = "user.png"; path = "../src/assets/images/icon/user.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C2A011B89EBB45F4B60839C1 /* starbucks.jpeg */ = {isa = PBXFileReference; name = "starbucks.jpeg"; path = "../src/assets/images/starbucks.jpeg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		659EA3F002864F339C1C33EF /* starbucks2.jpg */ = {isa = PBXFileReference; name = "starbucks2.jpg"; path = "../src/assets/images/starbucks2.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C353E3EFBFCB4C4F8E674EB3 /* super.png */ = {isa = PBXFileReference; name = "super.png"; path = "../src/assets/images/super.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9C584D68211048FA9EAA7D3C /* arrow.png */ = {isa = PBXFileReference; name = "arrow.png"; path = "../src/assets/images/icon/arrow.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		224EE217CBAE4D71818ED3E0 /* credit-card.png */ = {isa = PBXFileReference; name = "credit-card.png"; path = "../src/assets/images/icon/credit-card.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3B74A08C608243BBBA0B53AF /* setting.png */ = {isa = PBXFileReference; name = "setting.png"; path = "../src/assets/images/icon/setting.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		17AC6AAF6532480BA891327D /* shopping-bag.png */ = {isa = PBXFileReference; name = "shopping-bag.png"; path = "../src/assets/images/icon/shopping-bag.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AFF7832CCE67408AA1AE6E53 /* user.jpg */ = {isa = PBXFileReference; name = "user.jpg"; path = "../src/assets/images/user.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EC5F7FAFC6B04C4899F0A6E7 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC9E56A2F14741BDBF9A9D31 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E97114F45223459FAC865815 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4302C117D02E4CFE9430DF86 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F33780F2A3F2401390D208C4 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9640979FF2E8497BAB5B9361 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BA9B75C1F6BF4BC580729C09 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		04D794A71B0540A3AD8C3096 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2D68659436AB44F79E76CF9F /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5052E94B5F2F402382B3A6DD /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0DA5EA942B4E4782A4B02268 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E5D9AD8AAEE74F3AB1C126AD /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AF6A78AEC7874E1AABCC05BF /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		44E7045A45CD4CE8953A8399 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7D2CB634B6204E248A77D94E /* Roboto_medium.ttf */ = {isa = PBXFileReference; name = "Roboto_medium.ttf"; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC85B35327144816987224DE /* Roboto.ttf */ = {isa = PBXFileReference; name = "Roboto.ttf"; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5B145EB982AA4D50B06CD230 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E0F738EB6CAF4CBCBE830F93 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A1EB6D0C940B4B918BE39C68 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		23E8732C4E6A4AA0A3E80AB6 /* lock.png */ = {isa = PBXFileReference; name = "lock.png"; path = "../src/assets/images/icon/lock.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		39CB2D6C7A904425AFEA1FAE /* userlog.png */ = {isa = PBXFileReference; name = "userlog.png"; path = "../src/assets/images/icon/userlog.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F50B8DFE9E3B424BB8E8D5D5 /* hokben.jpg */ = {isa = PBXFileReference; name = "hokben.jpg"; path = "../src/assets/images/hokben.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DBDD677BD79845999925E9F6 /* arrow-left.png */ = {isa = PBXFileReference; name = "arrow-left.png"; path = "../src/assets/images/icon/arrow-left.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		715F5B726537403996CD7295 /* check-circle.png */ = {isa = PBXFileReference; name = "check-circle.png"; path = "../src/assets/images/icon/check-circle.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AA5D4CA5355B42C6B95A2D98 /* minus-square.png */ = {isa = PBXFileReference; name = "minus-square.png"; path = "../src/assets/images/icon/minus-square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		18AC9E44287E45038070A4FA /* plus-square.png */ = {isa = PBXFileReference; name = "plus-square.png"; path = "../src/assets/images/icon/plus-square.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1E0E0ACFCF414EA1847F93CE /* trash.png */ = {isa = PBXFileReference; name = "trash.png"; path = "../src/assets/images/icon/trash.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0D18F13C496C4B55B0DD80AF /* kfc.jpg */ = {isa = PBXFileReference; name = "kfc.jpg"; path = "../src/assets/images/kfc.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0A086B4210F843E099DB3F0A /* mcdonald.jpg */ = {isa = PBXFileReference; name = "mcdonald.jpg"; path = "../src/assets/images/mcdonald.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		31CFB7251449433BA8A13CBE /* phd.jpg */ = {isa = PBXFileReference; name = "phd.jpg"; path = "../src/assets/images/phd.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA4DFD243A334ECE843D2003 /* richeese.jpg */ = {isa = PBXFileReference; name = "richeese.jpg"; path = "../src/assets/images/richeese.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1E3FB28912A343838BF33D88 /* starbucks.png */ = {isa = PBXFileReference; name = "starbucks.png"; path = "../src/assets/images/starbucks.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4B8E8E80BCE2455ABCE428D4 /* thanks.jpg */ = {isa = PBXFileReference; name = "thanks.jpg"; path = "../src/assets/images/thanks.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* happfoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* happfoodTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = happfoodTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* happfood */ = {
+			isa = PBXGroup;
+			children = (
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = happfood;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* happfood */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* happfoodTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				F8C69F86676E49339EB85699 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* happfood.app */,
+				00E356EE1AD99517003FC87E /* happfoodTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* happfood-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* happfood-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8C69F86676E49339EB85699 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				68CD71629BF046E8B2DD95FE /* ayam.jpg */,
+				7E52E5AE694A4F5595BCAB4D /* cart.png */,
+				0F42754A90DE483FB3EEA942 /* chicken.png */,
+				9AEE636873C3464D975DD5FA /* coffee.png */,
+				EBED963D161044A89A2877F3 /* filter.png */,
+				D0626842454F4EEF9E5A06F8 /* globe.png */,
+				E1C0D2E49382443ABF8C6E60 /* help-circle.png */,
+				03ACDB18E6874537A799BED8 /* home.png */,
+				616C9F33E5764446AE09BEA6 /* map.png */,
+				AC1E8AF1251F47FAB7D78A58 /* message-square.png */,
+				85B85B3042D249DE8231E250 /* mic.png */,
+				2AD4847F414A4AECB7634845 /* pizza.png */,
+				E404A64A885D4E029D66E230 /* plus.png */,
+				BD9B0A9E0EB443E296B5D6A2 /* search.png */,
+				41C0C933EACE4D2EBEE0CBE5 /* shopping-cart.png */,
+				DCCFEC4EBE844D4DA675E39F /* tea.png */,
+				6BDF6BC039B443B3AE703060 /* user.png */,
+				C2A011B89EBB45F4B60839C1 /* starbucks.jpeg */,
+				659EA3F002864F339C1C33EF /* starbucks2.jpg */,
+				C353E3EFBFCB4C4F8E674EB3 /* super.png */,
+				9C584D68211048FA9EAA7D3C /* arrow.png */,
+				224EE217CBAE4D71818ED3E0 /* credit-card.png */,
+				3B74A08C608243BBBA0B53AF /* setting.png */,
+				17AC6AAF6532480BA891327D /* shopping-bag.png */,
+				AFF7832CCE67408AA1AE6E53 /* user.jpg */,
+				EC5F7FAFC6B04C4899F0A6E7 /* AntDesign.ttf */,
+				DC9E56A2F14741BDBF9A9D31 /* Entypo.ttf */,
+				E97114F45223459FAC865815 /* EvilIcons.ttf */,
+				4302C117D02E4CFE9430DF86 /* Feather.ttf */,
+				F33780F2A3F2401390D208C4 /* FontAwesome.ttf */,
+				9640979FF2E8497BAB5B9361 /* FontAwesome5_Brands.ttf */,
+				BA9B75C1F6BF4BC580729C09 /* FontAwesome5_Regular.ttf */,
+				04D794A71B0540A3AD8C3096 /* FontAwesome5_Solid.ttf */,
+				2D68659436AB44F79E76CF9F /* Fontisto.ttf */,
+				5052E94B5F2F402382B3A6DD /* Foundation.ttf */,
+				0DA5EA942B4E4782A4B02268 /* Ionicons.ttf */,
+				E5D9AD8AAEE74F3AB1C126AD /* MaterialCommunityIcons.ttf */,
+				AF6A78AEC7874E1AABCC05BF /* MaterialIcons.ttf */,
+				44E7045A45CD4CE8953A8399 /* Octicons.ttf */,
+				7D2CB634B6204E248A77D94E /* Roboto_medium.ttf */,
+				AC85B35327144816987224DE /* Roboto.ttf */,
+				5B145EB982AA4D50B06CD230 /* rubicon-icon-font.ttf */,
+				E0F738EB6CAF4CBCBE830F93 /* SimpleLineIcons.ttf */,
+				A1EB6D0C940B4B918BE39C68 /* Zocial.ttf */,
+				23E8732C4E6A4AA0A3E80AB6 /* lock.png */,
+				39CB2D6C7A904425AFEA1FAE /* userlog.png */,
+				F50B8DFE9E3B424BB8E8D5D5 /* hokben.jpg */,
+				DBDD677BD79845999925E9F6 /* arrow-left.png */,
+				715F5B726537403996CD7295 /* check-circle.png */,
+				AA5D4CA5355B42C6B95A2D98 /* minus-square.png */,
+				18AC9E44287E45038070A4FA /* plus-square.png */,
+				1E0E0ACFCF414EA1847F93CE /* trash.png */,
+				0D18F13C496C4B55B0DD80AF /* kfc.jpg */,
+				0A086B4210F843E099DB3F0A /* mcdonald.jpg */,
+				31CFB7251449433BA8A13CBE /* phd.jpg */,
+				EA4DFD243A334ECE843D2003 /* richeese.jpg */,
+				1E3FB28912A343838BF33D88 /* starbucks.png */,
+				4B8E8E80BCE2455ABCE428D4 /* thanks.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* happfoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "happfoodTests" */;
+			buildPhases = (
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = happfoodTests;
+			productName = happfoodTests;
+			productReference = 00E356EE1AD99517003FC87E /* happfoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* happfood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "happfood" */;
+			buildPhases = (
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = happfood;
+			productName = "happfood";
+			productReference = 13B07F961A680F5B00A75B9A /* happfood.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E47A1E0B4A5D006451C7 /* happfood-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "happfood-tvOS" */;
+			buildPhases = (
+				FD10A7F122414F3F0027D42C /* Start Packager */,
+				2D02E4771E0B4A5D006451C7 /* Sources */,
+				2D02E4781E0B4A5D006451C7 /* Frameworks */,
+				2D02E4791E0B4A5D006451C7 /* Resources */,
+				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "happfood-tvOS";
+			productName = "happfood-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* happfood-tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02E48F1E0B4A5D006451C7 /* happfood-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "happfood-tvOSTests" */;
+			buildPhases = (
+				2D02E48C1E0B4A5D006451C7 /* Sources */,
+				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
+				2D02E48E1E0B4A5D006451C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+			);
+			name = "happfood-tvOSTests";
+			productName = "happfood-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* happfood-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 940;
+				ORGANIZATIONNAME = Facebook;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					2D02E47A1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2D02E48F1E0B4A5D006451C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "happfood" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* happfood */,
+				00E356ED1AD99517003FC87E /* happfoodTests */,
+				2D02E47A1E0B4A5D006451C7 /* happfood-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* happfood-tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				BA128AB581FF43CFB2D8267A /* ayam.jpg in Resources */,
+				FAEB44BC0A8B4DE6A19A1A02 /* cart.png in Resources */,
+				C57AE44725A442AD830601BD /* chicken.png in Resources */,
+				72EC331CF5284C4FB57D827F /* coffee.png in Resources */,
+				30AA66CE9C1747178B1BF30D /* filter.png in Resources */,
+				534765A4B8004CFCA3B2511A /* globe.png in Resources */,
+				F6C5ED4F36484FFEABAD27FD /* help-circle.png in Resources */,
+				E467BE35960044C5AB7A1FDD /* home.png in Resources */,
+				AFB9FA24EFE6439AB864C91C /* map.png in Resources */,
+				FC5DA8E83C9647FE8F364E06 /* message-square.png in Resources */,
+				560F4638DB75486D836992F3 /* mic.png in Resources */,
+				032A6A4B94B34D908D2B9DEE /* pizza.png in Resources */,
+				BD1433DFCAF64A8F81CE4DE9 /* plus.png in Resources */,
+				A190DB1F29C3483594E319B0 /* search.png in Resources */,
+				15D6A8D2AAF34E419D859BD1 /* shopping-cart.png in Resources */,
+				164E277655A145DD98825090 /* tea.png in Resources */,
+				C930AD7E9EAD4E009FC3BAAD /* user.png in Resources */,
+				C27885FEC2B14A00867A6E1A /* starbucks.jpeg in Resources */,
+				3BCAE78E5F3B46C1A123F53D /* starbucks2.jpg in Resources */,
+				9892F34901A449D9BA1D37A5 /* super.png in Resources */,
+				D4E9A4E9F2174C83A480FD3C /* arrow.png in Resources */,
+				119D7042A085428FB8E8F283 /* credit-card.png in Resources */,
+				0C104053479C4F01970EC473 /* setting.png in Resources */,
+				C4951E4B0F4943B98D4112DD /* shopping-bag.png in Resources */,
+				44D8704C93C148CFB3A6FBD8 /* user.jpg in Resources */,
+				214E8FE22D8C4494A760EABE /* AntDesign.ttf in Resources */,
+				E6965CB714834F54BF40B33E /* Entypo.ttf in Resources */,
+				4FF7E215EE5F4D7095C73156 /* EvilIcons.ttf in Resources */,
+				8F088F7F733B4EE8AB503FC6 /* Feather.ttf in Resources */,
+				0FBEF5E96CAD4571BFA79644 /* FontAwesome.ttf in Resources */,
+				00CFC8F06C68418D86C6AF63 /* FontAwesome5_Brands.ttf in Resources */,
+				CF70E49DC387468B923E7C98 /* FontAwesome5_Regular.ttf in Resources */,
+				1CB1977CFEAF40FBBA763B2F /* FontAwesome5_Solid.ttf in Resources */,
+				6E1A3D77C8E94DDEA4CCF12C /* Fontisto.ttf in Resources */,
+				F24956FFE5D14A1FBB8405EA /* Foundation.ttf in Resources */,
+				9885E420D311415A8B57D95E /* Ionicons.ttf in Resources */,
+				16958A91319E44BE8B7BBBE1 /* MaterialCommunityIcons.ttf in Resources */,
+				C2ED13A1C2124ACA9A447BB4 /* MaterialIcons.ttf in Resources */,
+				D96A3F83645F4C6FB3F051A2 /* Octicons.ttf in Resources */,
+				DE5BE59D05694769829ADCBD /* Roboto_medium.ttf in Resources */,
+				1AFD5E0AFDEC4470AB2B2491 /* Roboto.ttf in Resources */,
+				2D1C3A18BE3F469DA9324BE7 /* rubicon-icon-font.ttf in Resources */,
+				09768EBFC3004EF9ADED37BF /* SimpleLineIcons.ttf in Resources */,
+				A47BBE28C3FD4637A0094043 /* Zocial.ttf in Resources */,
+				18899E8D8A064DDF83BE2D26 /* lock.png in Resources */,
+				BFCC780B3DF44814988790C2 /* userlog.png in Resources */,
+				B04B7F79753748358792BBA8 /* hokben.jpg in Resources */,
+				F97E0E31422A4D43AD422C52 /* arrow-left.png in Resources */,
+				A00AC8E52ACE4A85974FCB38 /* check-circle.png in Resources */,
+				D72D974C58164A129D9347E8 /* minus-square.png in Resources */,
+				98967A889EAE44259C54AFE4 /* plus-square.png in Resources */,
+				5BD7AB3E1E1E41E4BFA092ED /* trash.png in Resources */,
+				AF85720B35CB45F6878834E4 /* kfc.jpg in Resources */,
+				5E34E97D32FC4D1BBF395467 /* mcdonald.jpg in Resources */,
+				0D0D12EAC4FB4E2D88E66906 /* phd.jpg in Resources */,
+				458CDD2A7D8642C2919464B1 /* richeese.jpg in Resources */,
+				FAC15D913DCD426FB4D09783 /* starbucks.png in Resources */,
+				DA4F99E49DA1486C960CBD65 /* thanks.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4791E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F122414F3F0027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* happfoodTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E4771E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD954D1E0B4F2C00145EB5 /* happfoodTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* happfood */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02E47A1E0B4A5D006451C7 /* happfood-tvOS */;
+			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13B07FB21A68108700A75B9A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = happfood;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = happfoodTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/happfood.app/happfood";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = happfoodTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/happfood.app/happfood";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				INFOPLIST_FILE = happfood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = happfood;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = happfood/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = happfood;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		2D02E4971E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "happfood-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.happfood-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		2D02E4981E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "happfood-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.happfood-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Release;
+		};
+		2D02E4991E0B4A5E006451C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "happfood-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.happfood-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/happfood-tvOS.app/happfood-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2D02E49A1E0B4A5E006451C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "happfood-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.happfood-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/happfood-tvOS.app/happfood-tvOS";
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "happfoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "happfood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "happfood-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4971E0B4A5E006451C7 /* Debug */,
+				2D02E4981E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "happfood-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02E4991E0B4A5E006451C7 /* Debug */,
+				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "happfood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
