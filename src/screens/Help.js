@@ -4,8 +4,8 @@ import {Text, View} from 'react-native';
 export default class Help extends Component {
   render() {
     return (
-      <View>
-        <Text> COMINGSOON </Text>
+      <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
+        <Text style={{fontSize:30}}> COMINGSOON </Text>
       </View>
     );
   }

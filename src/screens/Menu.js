@@ -241,8 +241,7 @@ class MenuOriginal extends Component {
                               }
                             />
                           </View>
-                          <View
-                            style={{ paddingRight: 20}}>
+                          <View style={{paddingRight: 20}}>
                             <View
                               onStartShouldSetResponder={() =>
                                 this.props.navigation.navigate('Cart')

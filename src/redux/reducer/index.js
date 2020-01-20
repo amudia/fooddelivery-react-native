@@ -7,6 +7,7 @@ import menurestaurant from './Menurestaurant';
 import restaurant from './Restaurant';
 import popularitem from './Pupularitem';
 import categories from './Categories';
+import login from './Login';
 
 const appReducer = combineReducers({
   itemid,
@@ -16,6 +17,7 @@ const appReducer = combineReducers({
   detailriview,
   detailrestaurant,
   menurestaurant,
+  login,
 });
 
 export default appReducer;
