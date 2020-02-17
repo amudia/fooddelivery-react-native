@@ -22,20 +22,21 @@ import Setting from '../screens/Setting';
 import Riview from '../screens/Riview';
 import Pagethanks from '../screens/Pagethanks';
 import Menucategory from '../screens/Menucategory';
+import Splashscreen from '../screens/Splashscreen';
 
-// const SplashNav = createStackNavigator(
-//   {
-//     Splash: {
-//       screen: Splash,
-//       navigationOptions: {
-//         headerShown: false,
-//       },
-//     },
-//   },
-//   {
-//     initialRouteName: 'Splash',
-//   },
-// );
+const SplashNav = createStackNavigator(
+  {
+    Splashscreen: {
+      screen: Splashscreen,
+      navigationOptions: {
+        headerShown: false,
+      },
+    },
+  },
+  {
+    initialRouteName: 'Splashscreen',
+  },
+);
 
 const AuthNav = createStackNavigator(
   {
@@ -300,11 +301,12 @@ const BottomNav = createBottomTabNavigator(
 
 const SwitchNav = createSwitchNavigator(
   {
+    SplashNav,
     AuthNav,
     BottomNav,
   },
   {
-    initialRouteName: 'AuthNav',
+    initialRouteName: 'SplashNav',
   },
 );
 

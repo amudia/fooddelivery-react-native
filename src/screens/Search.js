@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
+import {withNavigation} from 'react-navigation';
 
-export default class Search extends Component {
+class SearchOriginal extends Component {
   render() {
     return (
       <View>
@@ -10,3 +11,6 @@ export default class Search extends Component {
     );
   }
 }
+const Search = withNavigation(SearchOriginal);
+
+export default Search;

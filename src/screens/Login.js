@@ -1,5 +1,12 @@
 import React, {Component} from 'react';
-import {Text, View, Image, TouchableOpacity, StyleSheet} from 'react-native';
+import {
+  Text,
+  View,
+  Image,
+  TouchableOpacity,
+  StyleSheet,
+  Alert,
+} from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
 import {withNavigation} from 'react-navigation';
 import {postLogin} from '../redux/action/Login';
@@ -111,25 +118,70 @@ class LoginOriginal extends Component {
       password: '',
       isLoading: false,
       isSuccess: false,
-      msg: false,
+      message: false,
     };
   }
-  async login() {
+  // async login() {
+  //   const {username, password} = this.state;
+  //   const data = {
+  //     username,
+  //     password,
+  //   };
+  //   await this.props.dispatch(postLogin(data));
+  //   console.log(this.props.login.data.msg);
+  //   if ((await this.props.login.isSuccess) === true) {
+  //     this.props.navigation.navigate('Home');
+  //   } else {
+  //     this.setState({
+  //       msg: true,
+  //     });
+  //   }
+  // }
+  async handleSubmit() {
     const {username, password} = this.state;
     const data = {
       username,
       password,
     };
     await this.props.dispatch(postLogin(data));
-    console.log(this.props.login.data.msg);
-    if ((await this.props.login.success) === true) {
-      this.props.navigation.navigate('Home');
-    } else {
-      this.setState({
-        msg: true,
-      });
+  }
+
+  async componentDidUpdate(prevProps) {
+    if (prevProps.login.isLoading !== this.state.isLoading) {
+      if (prevProps.login.isLoading === true) {
+        this.setState({
+          isLoading: true,
+        });
+      } else {
+        if (this.props.login.isSuccess) {
+          await this.setState({
+            isLoading: false,
+            isSuccess: true,
+            message: 'Login Success.',
+          });
+          this.handleRedirect();
+        } else {
+          await this.setState({
+            isLoading: false,
+            isSuccess: false,
+            message: 'Login Failed. Try Again.',
+          });
+          this.handleRedirect();
+        }
+      }
     }
   }
+
+  handleRedirect() {
+    if (this.state.isSuccess) {
+      Alert.alert('Login Message', this.state.message, [
+        {text: 'OK', onPress: () => this.props.navigation.navigate('Home')},
+      ]);
+    } else {
+      Alert.alert('Login Message', this.state.message);
+    }
+  }
+
   render() {
     const {msg} = this.state;
     return (
@@ -149,6 +201,7 @@ class LoginOriginal extends Component {
                 <View>
                   <TextInput
                     placeholder="Username"
+                    autoCapitalize="none"
                     value={this.state.username}
                     onChange={e =>
                       this.setState({username: e.nativeEvent.text})
@@ -195,7 +248,7 @@ class LoginOriginal extends Component {
 
             <View
               style={{marginBottom: 5, marginTop: 20, marginHorizontal: 30}}>
-              <TouchableOpacity onPress={() => this.login()}>
+              <TouchableOpacity onPress={() => this.handleSubmit()}>
                 <View style={styles.loginbutton}>
                   <Text style={styles.logintext}>Login</Text>
                 </View>

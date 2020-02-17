@@ -110,7 +110,6 @@ class RestaurantOriginal extends Component {
                         source={{uri: APP_URL.concat(`src/assets/${v.logo}`)}}
                       />
                     </View>
-                    {console.log(APP_URL.concat(`src/assets/${v.logo}`))}
                   </TouchableOpacity>
                   <View style={styles.textwrap}>
                     <View style={styles.atextwrap}>

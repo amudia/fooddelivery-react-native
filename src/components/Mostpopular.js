@@ -125,7 +125,7 @@ class MostpopularOriginal extends Component {
                     <TouchableOpacity
                       onPress={() =>
                         this.props.navigation.navigate('Detailitem', {
-                          id: v.id_item
+                          id: v.id_item,
                         })
                       }>
                       <View style={styles.wrapimg}>
